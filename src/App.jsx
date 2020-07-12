@@ -1,5 +1,5 @@
 import React from 'react';
-import { PropertyCard } from './PropertyCard'
+import { PropertyCard } from './PropertyCard';
 
 function App() {
   const property = {
@@ -16,8 +16,10 @@ function App() {
   };
 
   return (
-    <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
-      <PropertyCard property={property} />
+    <div className="antialiased text-gray-900">
+      <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
+        <PropertyCard property={property} />
+      </div>
     </div>
   );
 }

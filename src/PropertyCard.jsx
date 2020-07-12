@@ -5,13 +5,17 @@ export function PropertyCard({ property }) {
     <div className="bg-white border rounded-lg overflow-hidden">
       <img src={property.imageUrl} alt={property.imageAlt} />
       <div className="p-6">
-        <h4>{property.title}</h4>
-        <div>
+        <div className="text-gray-600 text-xs uppercase font-semibold tracking-wide">
           {property.beds} beds &bull; {property.baths} baths
         </div>
-        <div>{property.formattedPrice} / wk</div>
-        <div>
-          {property.rating}/5 stars (based on {property.reviewCount}) reviews
+        <h4 className="font-semibold text-lg leading-tight truncate">{property.title}</h4>
+        <div className="mt-1">
+          {property.formattedPrice}{' '}
+          <span className="text-gray-600 text-sm">/ wk</span>
+        </div>
+        <div className="mt-4">
+          <span className="text-teal-600 font-semibold">{property.rating}/5 stars{' '}</span>
+          <span className="text-gray-600 text-sm">(based on {property.reviewCount} reviews)</span>
         </div>
       </div>
     </div>
