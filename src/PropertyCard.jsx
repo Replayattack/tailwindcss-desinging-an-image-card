@@ -3,15 +3,13 @@ import React from 'react';
 export function PropertyCard({ property }) {
   return (
     <div className="bg-white border rounded-lg overflow-hidden">
-      {/* <div
-        className="h-48 bg-cover bg-center"
-        style={{ backgroundImage: `url(${property.imageUrl})` }}
-      ></div> */}
-      <img
-        className="h-48 w-full object-cover"
-        src={property.imageUrl}
-        alt={property.imageAlt}
-      />
+      <div className="relative pb-2/3">
+        <img
+          className="absolute h-full w-full object-cover"
+          src={property.imageUrl}
+          alt={property.imageAlt}
+        />
+      </div>
       <div className="p-6">
         <div className="flex items-baseline">
           <span className="inline-block bg-teal-200 text-teal-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">

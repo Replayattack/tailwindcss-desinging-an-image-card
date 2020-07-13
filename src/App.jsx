@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="antialiased text-gray-900">
-      <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
+      <div className="bg-gray-200 min-h-screen p-8 flex flex-col items-center justify-center">
         <PropertyCard property={property} />
       </div>
     </div>
